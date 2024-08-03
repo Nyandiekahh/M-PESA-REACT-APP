@@ -1,0 +1,13 @@
+{
+    "name": "mpesa-react-app",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "concurrently \"npm run server\" \"npm run client\"",
+      "server": "cd server && npm start",
+      "client": "cd client && npm start",
+      "install": "cd server && npm install && cd ../client && npm install"
+    },
+    "devDependencies": {
+      "concurrently": "^6.2.0"
+    }
+  }
